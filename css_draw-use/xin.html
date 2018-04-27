@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/css.css" />
+		<style>
+			.heart{
+				width:160px;
+				height:200px;
+				position:relative;
+			}
+			.heart:before{
+				content:" ";
+				border: 0 solid transparent; -moz-border-radius:100px;-webkit-border-radius:100px;border-radius:100px 100px 0 0;
+				width:80px;
+				height:120px;
+				background:#669;
+				-moz-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);-webkit-transform: rotate(-45deg);
+				position:absolute;
+				left:20px;
+			}
+			.heart:after{
+				content:" ";
+				border: 0 solid transparent; 
+				-moz-border-radius:100px;-webkit-border-radius:100px;border-radius:100px 100px 0 0;
+				width:80px;
+				height:120px;
+				background:#669;
+				-moz-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);-webkit-transform: rotate(45deg);
+				position:absolute;
+				left:48px;
+				top:0px;
+			}
+			
+			
+			.capsule{
+				border: 0 solid transparent; 
+				-moz-border-radius:100px;-webkit-border-radius:100px;border-radius:100px;
+				width:200px;
+				height:70px;
+				background:#669;
+			}
+			.v-capsule{
+				border: 0 solid transparent; 
+				-moz-border-radius:100px;-webkit-border-radius:100px;border-radius:100px;
+				width:80px;
+				height:200px;
+				background:#669;
+			}
+			.up-capsule{
+				border: 0 solid transparent; 
+				-moz-border-radius:100px;-webkit-border-radius:100px;border-radius:100px 100px 0 0;
+				width:70px;
+				height:120px;
+				background:#669;
+			}
+			.r45-capsule{
+				border: 0 solid transparent; 
+				-moz-border-radius:100px;-webkit-border-radius:100px;border-radius:100px 100px 0 0;
+				width:70px;
+				height:120px;
+				background:#669;
+				-moz-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);-webkit-transform: rotate(45deg);
+				margin-left:20px;
+			}
+			.l45-capsule{
+				border: 0 solid transparent; 
+				-moz-border-radius:100px;-webkit-border-radius:100px;border-radius:100px 100px 0 0;
+				width:70px;
+				height:120px;
+				background:#669;
+				-moz-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);-webkit-transform: rotate(-45deg);
+				margin-left:20px;
+			}
+			.lr45-capsule{
+				width:160px;
+				height:130px;
+				position:relative;
+			}
+			.lr45-capsule:before{
+				content:" ";
+				border: 0 solid transparent; 
+				-moz-border-radius:100px;-webkit-border-radius:100px;border-radius:100px 100px 0 0;
+				width:80px;
+				height:120px;
+				background:#669;
+				-moz-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);-webkit-transform: rotate(-45deg);
+				position:absolute;
+				left:20px;
+			}
+			.lr45-capsule:after{
+				content:" ";border: 0 solid transparent; 
+				-moz-border-radius:100px;-webkit-border-radius:100px;border-radius:100px 100px 0 0;
+				width:80px;
+				height:120px;
+				background:#669;
+				-moz-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);-webkit-transform: rotate(45deg);
+				position:absolute;
+				left:160px;
+				top:00px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="heart"></div>
+		<div class="capsule"></div>
+		<div class="v-capsule"></div>
+		<div class="up-capsule"></div>
+		<div class="r45-capsule"></div>
+		<div class="l45-capsule"></div>
+		<div class="lr45-capsule"></div>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title></title>  
+    <meta charset="utf-8">
+    
+    <!--1，兼容IE8，未果，$.browser.msie依旧不可以用
+    	2，canvas大小不能改变
+    -->
+   	<!-[if lt IE 9]>
+  		<script type="text/javascript" src="js/jquery.1.9.1.min.js" ></script>
+	<![endif]->
+	<!-[if gte IE 9]>
+ 		 <script type="text/javascript" src="js/jquery.2.0.0.min.js" ></script>
+	<![endif]->
+	
+	
+   <script type="text/javascript" src="js/excanvas.js" ></script>
+</head>  
+<body>    
+
+	<canvas id="aaa" ></canvas>
+	<canvas id="ccc"></canvas>
+	<script>
+		
+		
+//		$(function(){
+//		    var canvas=document.createElement("canvas");
+//		    document.body.appendChild(canvas);
+//		    if($.browser.msie){
+//		        canvas=window.G_vmlCanvasManager.initElement(canvas);
+//		    }
+//		    if(canvas.getContext){alert("support");}
+//		});
+
+
+		var c=document.getElementById("aaa");
+		var valueF = "hahah";
+		
+		function fontColorGradient(canvasT,valueF){
+			var ctx=canvasT.getContext("2d");	
+			ctx.font="30px Verdana";
+			// 创建渐变
+			var gradient=ctx.createLinearGradient(0,0,canvasT.width,0);
+			gradient.addColorStop("0","#000088 ");
+			gradient.addColorStop("0.5","#FFF");// #9999FF
+			gradient.addColorStop("1","#000088 ");
+			// 用渐变填色
+			ctx.fillStyle=gradient;
+			ctx.fillText(valueF,10,90);
+		}
+		
+		fontColorGradient(c,valueF);
+
+	</script>
+</body>  
+</html>  

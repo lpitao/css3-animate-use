@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/css.css" />
+		<style>
+			/*向上箭头*/
+			.box{
+				position: relative;
+			}
+			.box span{
+				width: 0;
+				height: 0;
+				font-size: 0;
+				overflow: hidden;
+				position: absolute;
+			}
+			span.arrow_1{
+				border-bottom: 20px solid #beceeb;
+				border-left: 20px dashed transparent;
+				border-right: 20px dashed transparent;
+				left: 80px;
+				bottom: -13px;
+				z-index: 1;
+			}
+			span.arrow_2{
+				border-bottom: 20px solid #FFFFFF;
+				border-left: 20px dashed transparent;
+				border-right: 20px dashed transparent;
+				left: 80px;
+				bottom: -20px;
+				z-index: 2;
+			}
+			
+			/*向下箭头*/
+			.box_2{
+				position: relative;
+				top: 90px;
+			}
+			.box_2 span{
+				width: 0;
+				height: 0;
+				font-size: 0;
+				overflow: hidden;
+				position: absolute;
+			}
+			span.arrow_1_2{
+				border-top: 20px solid #beceeb;
+				border-left: 20px dashed transparent;
+				border-right: 20px dashed transparent;
+				left: 80px;
+				bottom: -20px;
+				z-index: 1;
+			}
+			span.arrow_2_2{
+				border-top: 20px solid #FFFFFF;
+				border-left: 20px dashed transparent;
+				border-right: 20px dashed transparent;
+				left: 80px;
+				bottom: -13px;
+				z-index: 2;
+			}
+			/*向左箭头*/
+			.box_3{
+				position: relative;
+				top: 180px;
+			}
+			.box_3 span{
+				width: 0;
+				height: 0;
+				font-size: 0;
+				overflow: hidden;
+				position: absolute;
+			}
+			span.arrow_1_3{
+				border-right: 20px solid #beceeb;
+				border-top: 20px dashed transparent;
+				border-bottom: 20px dashed transparent;
+				left: 73px;
+				bottom: -40px;
+				z-index: 1;
+			}
+			span.arrow_2_3{
+				border-right: 20px solid #FFFFFF;
+				border-top: 20px dashed transparent;
+				border-bottom: 20px dashed transparent;
+				left: 80px;
+				bottom: -40px;
+				z-index: 2;
+			}
+			/*向右箭头*/
+			.box_4{
+				position: relative;
+				top: 270px;
+			}
+			.box_4 span{
+				width: 0;
+				height: 0;
+				font-size: 0;
+				overflow: hidden;
+				position: absolute;
+			}
+			span.arrow_1_4{
+				border-left: 20px solid #beceeb;
+				border-top: 20px dashed transparent;
+				border-bottom: 20px dashed transparent;
+				left: 80px;
+				bottom: -40px;
+				z-index: 1;
+			}
+			span.arrow_2_4{
+				border-left: 20px solid #FFFFFF;
+				border-top: 20px dashed transparent;
+				border-bottom: 20px dashed transparent;
+				left: 73px;
+				bottom: -40px;
+				z-index: 2;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!--向上箭头-->
+		<div class="box">
+			<span class="arrow_1"></span>
+			<span class="arrow_2"></span>
+		</div>
+		
+		<!--向下箭头-->
+		<div class="box_2">
+			<span class="arrow_1_2"></span>
+			<span class="arrow_2_2"></span>
+		</div>
+	
+		<!--向下箭头-->
+		<div class="box_3">
+			<span class="arrow_1_3"></span>
+			<span class="arrow_2_3"></span>
+		</div>
+		
+		<!--向下箭头-->
+		<div class="box_4">
+			<span class="arrow_1_4"></span>
+			<span class="arrow_2_4"></span>
+		</div>
+		
+	</body>
+</html>
